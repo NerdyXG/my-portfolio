@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    text-align: justify;
+}
+
+
+/* navbar section */
+
+nav {
+    font-weight: 400;
+}
+
+
+/* main section */
+
+.main-container {
+    min-height: 100vh;
+    background-color: rgba(128, 0, 128, .5);
+}
+
+.row {
+    padding-top: 15%;
+}
+
+.intro-text-container {
+    margin: auto;
+}
+
+.intro-text {
+    width: 70%;
+}
+
+
+/* skills section */
+
+#skills {
+    background: rgb(255, 165, 0);
+}
