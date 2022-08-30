@@ -53,6 +53,10 @@ nav.navbar .navbar-brand {
     font-weight: bold;
 }
 
+#close-icon {
+    display: ;
+}
+
 nav.navbar ul li a:hover {
     color: var(--orange) !important;
     transition: ease-in 300ms;
