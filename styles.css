@@ -1,3 +1,8 @@
+:root {
+    --orange: #ffbb33;
+    --purple: rgb(191, 0, 255);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -9,6 +14,30 @@ body {
     font-weight: 400;
     font-size: 1rem;
     text-align: justify;
+    line-height: 1.5;
+}
+
+h1 {
+    font-weight: bold;
+    /* color: #ffbb33; */
+}
+
+.container-fluid {
+    padding: 0 50px;
+}
+
+.section-heading {
+    color: #000;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 30px !important;
+    padding: 40px 0 0 0;
+    color: var(--purple);
+}
+
+.section-heading-info {
+    margin-top: -12px;
+    opacity: .7;
 }
 
 
@@ -18,16 +47,44 @@ nav {
     font-weight: 400;
 }
 
+nav.navbar .navbar-brand {
+    font-weight: bold;
+}
+
+nav.navbar ul li a:hover {
+    color: var(--orange) !important;
+    transition: ease-in 300ms;
+    opacity: .8;
+}
+
+nav.navbar ul li a.active {
+    color: #ffbb33 !important;
+}
+
+nav.navbar ul li a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    margin: auto;
+    background: var(--orange);
+}
+
+nav.navbar ul li a:hover::after {
+    width: 100%;
+    transition: ease-in 300ms;
+}
+
 
 /* main section */
 
 .main-container {
     min-height: 100vh;
-    background-color: rgba(128, 0, 128, .5);
+    background-color: rgb(191, 0, 255);
 }
 
-.row {
-    padding-top: 15%;
+.main-row {
+    padding-top: 150px;
 }
 
 .intro-text-container {
@@ -35,12 +92,101 @@ nav {
 }
 
 .intro-text {
-    width: 70%;
+    width: 80%;
+}
+
+.download-btn {
+    box-shadow: 4px 4px 4px #000;
+    border-radius: 7px;
+    font-weight: bold;
+    transition: 0.2s ease-in;
+}
+
+.download-btn:hover {
+    box-shadow: 6px -2px 4px #000;
 }
 
 
 /* skills section */
 
 #skills {
-    background: rgb(255, 165, 0);
+    background: var(--orange);
+}
+
+.skills-carousel {
+    max-width: 500px;
+    max-height: 350px;
+    margin: 0 auto;
+}
+
+
+/* projects section */
+
+#projects {
+    background: var(--purple);
+}
+
+
+/* media queries */
+
+@media (max-width: 991px) {
+    .container-fluid {
+        padding: 0 20px;
+    }
+    /* nav section */
+    .navbar-brand,
+    .navbar-toggler {
+        margin: 10px 0;
+    }
+    nav.navbar audio {
+        margin: 35px 0 10px 0;
+    }
+    nav.navbar ul li a:hover {
+        color: var(--orange) !important;
+        border-radius: 5px;
+        background: #fff;
+        font-weight: bold;
+        padding-left: 10px;
+        transition: all ease-in 300ms;
+        opacity: .8;
+    }
+    nav.navbar ul li a:hover::after {
+        width: 0;
+        transition: ease-in 300ms;
+    }
+    /* main-text */
+    .intro-text-container {
+        text-align: justify;
+    }
+    .intro-text {
+        width: 100%;
+    }
+    /* skills section */
+    .skills-carousel {
+        max-width: 350px;
+        max-height: 300px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 767px) {
+    /* main text section */
+    .intro-text-container {
+        text-align: center;
+    }
+    .intro-paragraph {
+        text-align: justify;
+    }
+    .main-row {
+        padding-top: 100px;
+    }
+    .profile-pic {
+        padding: 10px 0 0 0;
+        max-width: 350px;
+        max-height: 300px;
+        margin: auto auto 0;
+    }
+    .profile-pic-container {
+        text-align: center;
+    }
 }
