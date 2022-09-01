@@ -53,10 +53,6 @@ nav.navbar .navbar-brand {
     font-weight: bold;
 }
 
-#close-icon {
-    display: ;
-}
-
 nav.navbar ul li a:hover {
     color: var(--orange) !important;
     transition: ease-in 300ms;
@@ -130,6 +126,19 @@ nav.navbar ul li a:hover::after {
 
 #projects {
     background: var(--purple);
+}
+
+.purple-btn {
+    background-color: var(--purple);
+    border: var(--purple);
+    padding: 10px;
+}
+
+.purple-btn:hover {
+    background-color: var(--purple);
+    opacity: .8;
+    box-shadow: 2px 2px 4px #000;
+    transition: .2s ease;
 }
 
 
