@@ -135,7 +135,7 @@ nav.navbar ul li a:hover::after {
 }
 
 .purple-btn:hover {
-    background-color: var(--purple);
+    background-color: purple;
     opacity: .8;
     box-shadow: 2px 2px 4px #000;
     transition: .2s ease;
